@@ -4,12 +4,6 @@ const getUserByIdSchema = {
   params: S.object().prop("userId", S.string().required()),
 };
 
-        // return new User({
-        //   "email": email,
-        //   "name": name,
-        //   "country": country,
-        //   "neighborhood": neighborhood
-        // }).save();
 const createProfileSchema = {
   body: S.object()
     .prop("email", S.string().required())
