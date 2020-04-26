@@ -38,7 +38,7 @@ async function routes(app) {
     },
   );
 
-  app.patch(
+  app.post(
     "/:userId",
     { preValidation: [app.authenticate], schema: createProfileSchema },
     async (req, reply) => {
